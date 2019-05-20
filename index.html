@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <base href="/">
+</head>
+
+<body class="otrans trans">
+  <style>
+    body {
+      font-family: Roboto;
+      color: #424242;
+      margin: 0;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      overflow-y: scroll;
+    }
+    body.trans {
+      overflow:hidden;
+    }
+
+    h2 {
+      margin: 0;
+    }
+    p {
+      margin: 10px 0;
+      line-height: 27px;
+      text-indent: 10px;
+    }
+
+    header {
+      width:260px;
+      margin: 0 auto;
+    }
+    header > div:first-of-type {
+      padding: 10px 18px;
+      border: 2px solid black;
+      border-radius: 2px;
+      background: #FFEB3B;
+      background: #424242;
+      color: white;
+      box-shadow: 0px 0px 5px 2px #00000024;
+      /* display: inline-block; */
+    }
+
+    #menu {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      margin: 5px 0;
+      color: black;
+    }
+    #menu > * {
+      cursor: pointer;
+    }
+
+    #introduction {
+      margin: 0 0 30px 0;
+    }
+
+    .project {
+      /* border: 1px solid #00000024; */
+      background: #80808012;
+      border-radius: 3px;
+      overflow: auto;
+      padding:4px;
+    }
+    .project~.project {
+      margin-top: 18px;
+    }
+    .project > h2 {
+      display: flex;
+      align-items: center;
+      margin: 7px 7px 0 7px;
+      font-weight: 400;
+      color: black;
+    }
+    .project > h2 > img {
+      margin-right: 5px;
+    }
+    .project > .content {
+      margin: 5px 0;
+      padding: 0 18px;
+    }
+    .project > .content > .introduction {
+      /* padding: 0 0 0 30px; */
+      color: #78909c;
+      /* background: white; */
+    }
+    .project > .content > .introduction:before {
+      content: '⮑ '
+    }
+    .project > .controls {
+      padding: 7px;
+      text-align: right;
+    }
+    .separator {
+      height: 2px;
+      background: #8080802e;
+      max-width: 500px;
+      margin: 60px auto;
+    }
+
+    .otrans {
+      opacity: 1;
+      transition: opacity .5s linear;
+    }
+    .trans {
+      opacity: 0 !important;
+    }
+  </style>
+
+  <my-app appTitle="appname">
+    <header slot="header">
+      <div>Valentin Degenne</div>
+      <div id=menu>
+        <div onclick="updateLocation('/contact')">contact</div>
+        <img src="/images/github.png" width=24 height=24 style="display:block;position:relative;top:4px" onclick="visit('https://github.com/vdegenne')">
+      </div>
+    </header>
+
+    <article slot="main">
+      <div id=introduction>
+        <p>I am a full-stack JavaScript freelancer in the field of Web Development specialized in progressive applications, Korean, Japanese and Chinese languages.</p>
+        <p>Below is a list of my most prominent work :</p>
+      </div>
+
+      <section class="project">
+        <h2><img src="/images/website.png" width=24>HangulHanja.com</h2>
+        <div class="content">
+          <p class="introduction">Relational Korean-Chinese dictionary.</p>
+          <p>I started developing this application in 2014 as I began learning Korean, and have since until now fill in the data almost everyday.</p>
+          <p>The idea was to make a relational dictionary for classifying Korean characters as they were made from Chinese its base language.</p>
+        </div>
+        <div class=controls>
+          <mwc-button dense unelevated onclick="visit('http://www.hangulhanja.com/')">visit</mwc-button>
+        </div>
+      </section>
+
+      <div class="separator"></div>
+
+      <section class="project">
+        <h2><img src="/images/instagram.png" width=24>chikojap</h2>
+        <div class="content">
+          <p class="introduction">Instagram account of Chikojap</p>
+          <p>I have made this Instagram account in 2019 as a way to share useful information about Korean, Japanese and Chinese language.</p>
+        </div>
+        <div class=controls>
+          <mwc-button dense unelevated onclick="visit('https://www.instagram.com/chikojap/')">visit</mwc-button>
+        </div>
+      </section>
+
+      <section class="project">
+        <h2><img src="/images/website.png" width=24>chikojap.com</h2>
+        <div class="content">
+          <p class="introduction">Mediator website of Chikojap</p>
+          <p>The website features a small application to learn and train Japanese vocabulary <a href="http://www.chikojap.com/train/japanese/1" target="_blank" style="background:black;color:white;padding:2px 5px">check the app</a></p>
+        </div>
+        <div class=controls>
+          <mwc-button dense unelevated onclick="visit('http://www.chikojap.com/')">home page</mwc-button>
+        </div>
+      </section>
+
+      <section class="about" style="color:#ff6f00">
+        <p><b>Chikojap</b> is a non-profit personal project born from my desire to teach about Korean, Chinese and Japanese language.</p>
+        <p>This project was made possible from the knowledge I acquired in the field of web development over the past years.</p>
+        <p>All the projects, the pictures and videos on the instagram account related to <b>Chikojap</b> were all created using pure JavaScript, CSS, and using lit-html and Polymer Frameworks.</p>
+      </section>
+
+      <div class="separator"></div>
+
+      <section class="project">
+        <h2><img src="/images/minerva.png" width=24>Minerva.com</h2>
+        <div class=content>
+          <p>Minerva is a minimal web-application whose goal is to cheer up people around the world.</p>
+          <p>Daily life can be really stressful, especially when overwhelmed by tasks and projects. But sometimes all we need is to pause few seconds and talk to the mind.</p>
+        </div>
+        <div class=controls>
+          <mwc-button dense unelevated onclick="visit('http://www.minerv4.com/about')">visit</mwc-button>
+        </div>
+      </section>
+    </article>
+
+
+    <style>
+      [slot=contact] {
+        /* width: 400px; */
+        margin: 0 auto;
+      }
+      [slot=contact] > div {
+        margin: 10px 0 5px 0;
+      }
+      [slot=contact] input {
+        width: 80%;
+        padding: 10px;
+        border-radius: 2px;
+        border: 1px solid #00000036;
+      }
+      [slot=contact] textarea {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        resize: vertical;
+        min-height: 200px;
+        box-sizing: border-box;
+        border-radius: 2px;
+        border: 1px solid #00000036;
+      }
+    </style>
+    <div slot="contact">
+      <mwc-button onclick="updateLocation('/')" icon="arrow_back" style="margin:0 0 30px 0" id=backButton>back</mwc-button>
+      <div>Name or Organisation :</div>
+      <input type=text id="formName">
+      <div>Subject :</div>
+      <input type=text id="formSubject">
+      <div>Message :</div>
+      <textarea id="formContent" placeholder="If you wish me to contact you back, please insert your email address in this field"></textarea>
+      <div style="text-align:left;margin:10px 0 0">
+        <mwc-button unelevated onclick="contactview.send()" id="formSubmitButton">send</mwc-button>
+      </div>
+    </div>
+  </my-app>
+
+  <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+  <script type="module" src="src/my-app.js"></script>
+  <script>
+    window.visit = (location) => {
+      window.open(location, '_blank')
+    }
+  </script>
+</body>
+
+</html>
