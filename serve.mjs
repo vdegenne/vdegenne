@@ -14,7 +14,7 @@ app.use(bodyParser.json())
 app.get('/api/ping', (req, res) => res.end('pong'))
 
 app.get('/*', (req, res) => {
-  if (fs.existsSync(`${buildRoot}/index`)) {
+  if (fs.existsSync(`${buildRoot}/index.html`)) {
     fs.createReadStream(`${buildRoot}/index.html`).pipe(res)
   } else {
     res.end('build the project (yarn build) before serving the front routes')

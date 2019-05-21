@@ -101,7 +101,12 @@ class MyApp extends LitElement {
 
   updated(changedProps) {
     if (changedProps.has('path')) {
-      const pageTitle = this.appTitle + ' - ' + this.path.replace(/\//g, ' ')
+      let page = this.path.slice(1).replace(/\//g, ' ')
+      if (page) {
+        page = page[0].toUpperCase() + page.slice(1).toLowerCase()
+        page = ` - ${page}`
+      }
+      const pageTitle = this.appTitle + page
       updateMetadata({
         title: pageTitle,
         description: pageTitle
