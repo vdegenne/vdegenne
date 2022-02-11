@@ -13,6 +13,8 @@ I'm Valentin. A freelance Web Designer, Eastern languages and Crypto enthusiast 
     🥤 Buy Me a Coffee : https://www.buymeacoffee.com/vdegenne <br>
     💸 Bitcoin address : 1As8RCPmDgQXmwxeuitnhsamcNfKCppGzM <br>
     💸 Ethereum address : 0x17a578b81535ed006f481f9a355c7c3918694d74 <br>
+<br>
+    <img src="ethereum.png">
 <br><br>
     <img src="https://visitor-badge.glitch.me/badge?page_id=vdegenne.vdegenne">
 </p>
