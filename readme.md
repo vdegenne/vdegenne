@@ -4,7 +4,7 @@
   <img src="https://user-images.githubusercontent.com/5679180/79618120-0daffb80-80be-11ea-819e-d2b0fa904d07.gif" width="27px"> 💻
   <br><br>
   <samp>
-I'm Valentin. A freelance Web Designer, Eastern languages and Crypto enthusiast from France. I make various applications and browser extensions around these matters. I develop these tools because I find a true purpose in them, and I wish other people find them helpful as much as I do.
+I'm Valentin. A freelance Web Designer, Eastern languages and Crypto enthusiast from France. I make various applications and browser extensions around these matters. I develop these tools because I find a true purpose in them, and I wish other people find them as helpful as I do.
      <br><br>
     <a href="mailto:vdegenne">Contact me</a> <br>
     
