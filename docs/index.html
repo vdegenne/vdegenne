@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Japanese todo list</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%2300ff0c%22></rect><path fill=%22%23000000%22 d=%22M61.63 78.51L61.63 78.51Q60.20 79.73 57.19 80.65Q54.18 81.57 50.61 81.57L50.61 81.57Q46.33 81.57 43.27 80.29Q40.21 79.02 39.09 76.78L39.09 76.78Q37.96 74.43 36.33 70.71Q34.70 66.98 32.91 62.39Q31.13 57.80 29.24 52.65Q27.36 47.50 25.62 42.20Q23.89 36.89 22.36 31.79Q20.83 26.69 19.71 22.21L19.71 22.21Q21.13 20.78 23.84 19.60Q26.54 18.43 29.60 18.43L29.60 18.43Q33.37 18.43 35.77 20.01Q38.17 21.59 39.29 25.88L39.29 25.88Q42.04 35.87 44.85 45.00Q47.65 54.13 50.71 64.03L50.71 64.03L51.33 64.03Q54.08 54.44 56.99 43.12Q59.89 31.79 62.55 20.57L62.55 20.57Q64.38 19.66 66.47 19.04Q68.56 18.43 71.22 18.43L71.22 18.43Q74.99 18.43 77.64 20.11Q80.29 21.80 80.29 25.67L80.29 25.67Q80.29 27.92 79.22 32.20Q78.15 36.49 76.47 41.84Q74.79 47.20 72.70 53.01Q70.60 58.82 68.51 63.97Q66.42 69.13 64.59 73.05Q62.75 76.98 61.63 78.51Z%22></path></svg>"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons&display=block"
+      rel="stylesheet"
+    /> -->
+    <!-- <link rel="manifest" href="./manifest.json" /> -->
+    <!-- <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js');
+      }
+    </script> -->
+
+    <style>
+      body {
+        font-family: Roboto;
+      }
+      label {
+        display: flex;
+        align-items: center;
+        cursor: pointer !important;
+        user-select: none;
+      }
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://unpkg.com/@material/web@1.0.0-pre.5/"
+        }
+      }
+    </script>
+  </head>
+  <label><md-checkbox></md-checkbox>Audio clips</label>
+  <label><md-checkbox></md-checkbox>Kanji practice</label>
+  <label><md-checkbox></md-checkbox>Article</label>
+  <label><md-checkbox></md-checkbox>xbox subtitles</label>
+  <label><md-checkbox></md-checkbox>Bike/News</label>
+  <label><md-checkbox></md-checkbox>Kanji microscope</label>
+  <label><md-checkbox></md-checkbox>Make your own sentence</label>
+  <body>
+    <script type="module">
+      import "@material/web/checkbox/checkbox.js?module";
+    </script>
+  </body>
+</html>
