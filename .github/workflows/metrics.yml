@@ -1,6 +1,5 @@
 # For a full list of options see:
 # https://github.com/lowlighter/metrics/blob/master/action.yml
-# can we change that
 name: Metrics
 on:
   # Schedule daily updates
@@ -25,8 +24,8 @@ jobs:
           template: classic
           # config_timezone: America/Los_Angeles
           # plugin_traffic: yes
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+          # plugin_isocalendar: yes
+          # plugin_isocalendar_duration: full-year
           # plugin_stargazers: yes
           # plugin_reactions: yes
           # plugin_reactions_limit: 500
