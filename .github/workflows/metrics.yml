@@ -25,7 +25,7 @@ jobs:
           config_timezone: France/Paris
           # plugin_traffic: yes
           plugin_isocalendar: yes
-          # plugin_isocalendar_duration: full-year
+          plugin_isocalendar_duration: full-year
           # plugin_stargazers: yes
           # plugin_reactions: yes
           # plugin_reactions_limit: 500
