@@ -24,7 +24,7 @@ jobs:
           template: classic
           # config_timezone: America/Los_Angeles
           # plugin_traffic: yes
-          # plugin_isocalendar: yes
+          plugin_isocalendar: yes
           # plugin_isocalendar_duration: full-year
           # plugin_stargazers: yes
           # plugin_reactions: yes
